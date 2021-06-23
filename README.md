@@ -1,2 +1,2 @@
-# Log-On-Page
+# Javascript HTML CSS excercises.
 A basic CSS/HTML/Javascript logon page.
