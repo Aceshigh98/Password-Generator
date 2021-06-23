@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div class="form">
+    <form>
+      <label id="label">Account Details</label><br>
+      <div class="input">
+        <input type="text" id="firstName" placeholder="First Name"><br>
+        <input type="text" id="lastName" placeholder="Last Name"><br>
+        <input type="text" id="address" placeholder="Address"><br>
+        <input type="text" id="city" placeholder="City"><br>
+        <input type="text" id="State" placeholder="State"><br>
+        <input type="number" id="Zip" placeholder="Zipcode"><br>
+        <input type="email" id="Email" placeholder="Email Address"><br>
+        <input type="tel" id="Phone" placeholder="Phone Number" maxlength="14"><br>
+      </div>
+    </form>
+    <button id="submit">Continue</button>
+  </div>
+
+  <div class="form2Container">
+    <div class="input2">
+      <form>
+        <img src="avatar.jpg" class="avatar"><br>
+        <input type="text" id="Username" placeholder="Create Username"><br>
+        <input type="password" id="Password" minlength="4" maxlength="12" placeholder="Create Password"><br>
+        <button id="submit" onclick='SubmitOnClicked()'>Submit</button>
+      </form>
+    </div>>
+    <button id="submit2">Back</button>
+  </div>
+
+  <script type="text/Javascript" src="login.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(".form #submit").click(function () {
+      $('.form2Container').animate({ height: "toggle", opacity: "toggle" }, "slow");
+      console.log('test');
+    });
+  </script>
+
+  <script>
+    $(".form2Container #submit2").click(function () {
+      $('.form2Container').animate({ height: "toggle", opacity: "toggle" }, "slow");
+      console.log('test');
+    });
+  </script>
+
+  <script>
+    $("#Phone").on("change keyup paste", function () {
+      var output;
+      var input = $("#Phone").val();
+      input = input.replace(/[^0-9]/g, '');
+      var area = input.substr(0, 3);
+      var pre = input.substr(3, 3);
+      var tel = input.substr(6, 4);
+      if (area.length < 3) {
+        output = "(" + area;
+      } else if (area.length == 3 && pre.length < 3) {
+        output = "(" + area + ")" + " " + pre;
+      } else if (area.length == 3 && pre.length == 3) {
+        output = "(" + area + ")" + " " + pre + "-" + tel;
+      }
+      $("#Phone").val(output);
+    })
+  </script>
+
+  <script></script>
+
+
+  <script>
+    $(document).ready(function () {
+      $('.form2Container #submit').click(function () {
+        if (!$('#firstName').val() || !$('#lastName').val() || !$('#address').val() || !$('#city').val() || !$('#State').val() || !$('#Zip').val() || !$('#Email').val() || !$('#Phone').val() || !$('#Username').val() || !$('#Password').val()) {
+          alert('Please fill out all required information.');
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

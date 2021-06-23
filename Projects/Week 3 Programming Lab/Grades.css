@@ -1,0 +1,116 @@
+body{
+  background: linear-gradient(45deg,rgb(243, 66, 163),rgb(105, 58, 58),rgb(250, 144, 144),rgb(51, 3, 40));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient{
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+.GradeSelector{
+  background: #E9967A;
+  background-size: 100px 100px;
+  color:brown;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 5px #CD5C5C, 0px 0px 0px 10px #CD5C5C ;
+  padding: 200px 200px;
+
+}
+ p{
+  position: absolute;
+  padding: 20px 20px;
+  top: 25%;
+  left: 14%;
+  text-align: left;
+  font-size: 1.5em;
+  color: brown;
+  font-weight: bolder;
+  background-color: #E9967A;
+  box-shadow: 0px 0px 0px 5px #CD5C5C, 0px 0px 0px 10px #CD5C5C ;
+  border-radius: 15px;
+  transition-duration: 0.4s
+ 
+}
+p:hover{
+  background-color: brown;
+  color: white;
+}
+form{
+  padding: 100px 200px;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  border-radius: 25px;
+  box-shadow: 0px 0px 0px 5px #CD5C5C, 0px 0px 0px 10px #CD5C5C ;
+}
+.form label{
+  display: block;
+  text-align:center;
+  top: 5%;
+  left: 50%;
+  font-size: 40px;
+}
+.form button{
+top: 10%;
+align-items: center;
+border-radius: 12px;
+width: 100%;
+font-size: medium;
+transition-duration: 0.4s
+}
+.form button:hover{
+  background-color: brown;
+  color: white;
+}
+.form input{
+width: 100%;
+outline: none;
+border-bottom:3px solid whitesmoke;
+height: 20px;
+font-size: 15px;
+
+}
+#letterA{
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  font-size: 80px;
+}
+#letterB{
+  top: 50%;
+  left: 37.5%;
+  position: absolute;
+  font-size: 80px;
+}
+#letterC{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  font-size: 80px;
+}
+#letterD{
+  top: 50%;
+  left: 62.5%;
+  position: absolute;
+  font-size: 80px;
+}
+#letterF{
+  top: 50%;
+  left: 75%;
+  position: absolute;
+  font-size: 80px;
+}
+
+
+

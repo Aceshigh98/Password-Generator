@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grades</title>
+  <link rel="stylesheet" type="text/css" href="Grades.css">
+</head>
+<body>
+  <p>Enter a grade from 0-100 to see<br> 
+    what letter grade it will be.<br> 
+    The letter grade that represents<br>
+    the number you entered will  <br> 
+    light up as green, and if it <br>
+    flashes yellow and red that just <br>
+    means you've entered an <br>
+    invalid number to be graded.
+  </p>
+ <div class = "GradeSelector"> 
+  <div class="form">
+    <form>
+      <label>Letter Grade Calculator</label><br>
+      <input type="number" id="grade" placeholder="Enter Grade">
+      <button type="button" onclick="clicked()">Submit</button>
+    </form>
+  </div>
+  <h1 id = "letterA">A</h1>
+  <h1 id = "letterB">B</h1>
+  <h1 id = "letterC">C</h1>
+  <h1 id = "letterD">D</h1>
+  <h1 id = "letterF">F</h1>
+ </div>
+ <script type="text/Javascript" src="GradesMain.js"></script>
+  
+</body>
+</html>

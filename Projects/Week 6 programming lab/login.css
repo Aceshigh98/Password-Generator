@@ -1,0 +1,121 @@
+html{
+  min-height: 100%;
+}
+
+body{
+  background-image: url("water_drop_waves_213729_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  backface-visibility: 60%;
+}
+
+.form{
+  width: 800px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+.form button{
+  position: relative;
+  top: -80px;
+  width: 40%;
+  border-radius: 20px;
+}
+.form form{
+background-position: center;
+background-size: cover;
+background-image:url(pSXV0m.jpg);
+border-radius: 15px;
+border: 20px;
+height: 600px;
+border: 1px solid #2a3cad;
+box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2a3cad, 0 0 40px #2a3cad, 0 0 50px #2a3cad, 0 0 60px #2a3cad, 0 0 70px #2a3cad;
+border-radius: 4px;
+text-align: center;
+}
+.input input{
+  top: 40%;
+  margin: 20px 50px 10px;
+  width: 35%;
+  font-size: large;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.form2Container{
+  text-align: center;
+  width: 800px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: url(ripples.jpg);
+  background-size: cover;
+  text-align: center;
+  align-self: center;
+  display: none;
+
+  
+}
+
+.input2 input, button{
+  margin: 20px 50px 10px;
+  font-size: large;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.avatar{
+  margin: 20px;
+  width: 100px;
+  height: 100px;  
+  border-radius: 50%;
+    
+}
+#label{
+  margin:25px 50px 10px;
+  display: inline-block;
+  width: 25%;
+  font-size: 25px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px;
+  color: #2a3cad;
+  font-weight: bolder; 
+  text-align: center;
+}
+#submit{
+  width: 25%;
+  padding: 10px;
+  border-radius: 30px;
+  margin:15px 50px 10px;
+  background: linear-gradient(to right, white,#2a3cad);
+}
+#submit:hover{
+  background: linear-gradient(to left, white,#2a3cad);
+}
+
+#submit2{
+  width: 25%;
+  padding: 10px;
+  border-radius: 30px;
+  margin:15px 50px 10px;
+  background: linear-gradient(to right, white,#2a3cad);
+}
+#submit2:hover{
+  background: linear-gradient(to left, white,#2a3cad);
+}
+#formBackground{
+  position: relative;
+  left: 100%;
+  height: 500PX;
+  width: 500px;
+}
+#a{
+  text-decoration: none;
+  color: black;
+}
