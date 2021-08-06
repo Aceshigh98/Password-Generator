@@ -1,0 +1,65 @@
+<!--
+  Assignment: Week 4 Lab
+  Author: Brannon Cotherman
+  Date: 07/30/21
+  Purpose: Create a password generator
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Maker</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Password Generator</h1>
+    </div>
+
+    <div data-role="navbar">
+      <ul>
+        <li>
+          <a href="index.html">
+            Interface</a>
+        </li>
+        <li>
+          <a href="information.html" class="ui-btn-active ui-state-persist">
+            Information</a>
+        </li>
+      </ul>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <p>Enter the number of passwords you want to create.</p>
+      <tag id='errorPass'></tag>
+      <input type='text' id=numOfPass>
+      <p>Enter the desired length of the password you want.</p>
+      <tag id='errorLength'></tag>
+      <input type='text' id=passLength>
+      <button class='buttonGroup' onclick='createPasswords()'>Create Passwords</button>
+      <button class='buttonGroup' onclick='reset()'>Reset</button>
+      <label id ='passLabel'>Passwords</label>
+      <table id='table'>
+      </table>
+    </div>
+
+
+
+    <div data-role="footer">
+      <p>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

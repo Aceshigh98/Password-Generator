@@ -1,0 +1,32 @@
+/*
+  Name: Brannon Cotherman
+  Date: 08/04/21
+  Assignment: Week 4 assignment. Password Generator.
+*/
+
+.ui-content table, th, td{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.ui-content table, th, td{
+  padding:16px;
+}
+
+tr:nth-child(even) {
+  background-color:beige;
+}
+
+.ui-content label{
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+.ui-content tag{
+  color: red;
+}
+
+
