@@ -1,2 +1,2 @@
 # Password-Generator
-A simple password generator.
+A passwword generator that takes user input to determine the length of the password and how many passwords to be generated.
